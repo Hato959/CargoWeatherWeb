@@ -1,0 +1,291 @@
+body {
+    font-family: 'Georgia', serif; /* Fuente más formal */
+    margin: 0;
+    padding: 0;
+    background-image: url('imagenes/fondo.jpg'); /* Añade la imagen de fondo */
+    background-size: cover; /* Ajusta el tamaño de la imagen para que cubra todo el body */
+    background-position: center; /* Centra la imagen en el body */
+    background-attachment: fixed; /* Fija la imagen al fondo */
+    color: #333; /* Color del texto más formal */
+}
+
+header {
+    background: rgba(0, 0, 0, 0.6); /* Fondo semitransparente para el header */
+    color: #fff;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed; /* Cambia la posición a fija */
+    width: 100%; /* Asegura que la barra de navegación ocupe todo el ancho */
+    top: 0; /* Sitúa la barra de navegación en la parte superior */
+    z-index: 1; /* Establece un z-index mayor */
+    backdrop-filter: blur(10px); /* Añade un efecto de desenfoque al fondo del header */
+}
+
+header .logo h1 {
+    font-size: 28px; /* Ajusta el tamaño del texto */
+    color: #fff; /* Asegura que el color del texto sea blanco */
+    margin: 0; /* Elimina márgenes adicionales */
+    font-weight: bold; /* Hace el texto más prominente */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px; /* Aumenta el tamaño del texto para mayor legibilidad */
+}
+
+section {
+    padding: 50px 20px;
+    text-align: center;
+    background: transparent; /* Asegura que el fondo de las secciones sea transparente */
+}
+
+section h2 {
+    margin-bottom: 20px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Estilos específicos para el index */
+
+.index-background {
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para mayor legibilidad */
+    color: #fff;
+    padding: 100px 20px; /* Ajusta el espaciado interno */
+    text-align: center;
+    position: relative; /* Cambia la posición a relativa */
+    z-index: 0; /* Establece un z-index menor */
+    display: flex; /* Usa flexbox para centrar el contenido */
+    flex-direction: column; /* Asegura que los elementos estén apilados verticalmente */
+    justify-content: center; /* Centra verticalmente */
+    align-items: center; /* Centra horizontalmente */
+}
+
+.index-background h1 {
+    font-size: 48px; /* Ajusta el tamaño de la fuente del título */
+    margin-bottom: 20px; /* Ajusta el margen inferior del título */
+    font-weight: bold; /* Hace el texto del título más prominente */
+}
+
+.index-background p {
+    font-size: 24px; /* Ajusta el tamaño de la fuente del párrafo */
+    margin-bottom: 40px; /* Ajusta el margen inferior del párrafo */
+}
+
+.index-background .btn {
+    font-size: 20px; /* Ajusta el tamaño de la fuente del botón */
+    padding: 15px 30px; /* Ajusta el relleno del botón */
+    background-color: #084e11; /* Cambia el color de fondo del botón */
+    color: #fff; /* Cambia el color del texto del botón */
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.hero-container.index-background {
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+    color: #fff;
+    padding: 100px 20px; /* Ajusta el espaciado interno */
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.hero-container.index-background h1,
+.hero-container.index-background p {
+    color: #fff; /* Cambia el color del texto a blanco */
+}
+
+.hero-container.index-background .btn {
+    background-color: #084e11;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #084e11;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.about {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    height: 100vh; /* Establece la altura al 100% del viewport */
+    background: transparent; /* Asegura que el fondo de about sea transparente */
+}
+
+.about-content {
+    max-width: 800px; /* Ajusta el ancho máximo del contenido */
+    padding: 0 20px; /* Ajusta el espaciado interno */
+    text-align: center;
+}
+
+.advantages {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+.advantage {
+    width: 45%;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.advantage h3 {
+    margin-bottom: 10px;
+}
+
+.advantage ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+/* Estilos para los planes (plans) */
+.plans {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.plan {
+    width: 45%;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.plan h3 {
+    margin-bottom: 10px;
+}
+
+.plan ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.contact {
+    max-width: 800px; /* Ajusta el ancho máximo del formulario */
+    margin: auto; /* Centra horizontalmente */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centra vertical y horizontalmente */
+    background-color: #fff;
+    padding: 40px; /* Ajusta el espaciado interno */
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contact input[type="text"],
+.contact input[type="email"],
+.contact textarea,
+.contact button {
+    width: calc(100% - 20px); /* Toma en cuenta los márgenes */
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact button {
+    background-color: #084e11;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login {
+    max-width: 800px; /* Aumenta el ancho máximo del formulario */
+    margin: auto; /* Centra horizontalmente */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centra vertical y horizontalmente */
+    background-color: #fff;
+    padding: 40px; /* Ajusta el espaciado interno */
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.login input[type="email"],
+.login input[type="password"],
+.login input[type="submit"] {
+    width: calc(100% - 20px); /* Toma en cuenta los márgenes */
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login input[type="submit"] {
+    background-color: #084e11;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.register {
+    max-width: 800px; /* Aumenta el ancho máximo del formulario */
+    margin: auto; /* Centra horizontalmente */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centra vertical y horizontalmente */
+    background-color: #fff;
+    padding: 40px; /* Ajusta el espaciado interno */
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.register input[type="text"],
+.register input[type="tel"],
+.register input[type="email"],
+.register input[type="password"],
+.register input[type="submit"] {
+    width: calc(100% - 20px); /* Toma en cuenta los márgenes */
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
